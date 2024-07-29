@@ -2,7 +2,7 @@ def fix_ingredients(ingredients: list) -> list:
     fixed_ingredients = []
 
     for ingredient in ingredients:
-        if ingredient[0] != 'z':
+        if ingredient.lower()[0] != 'z':
 
             fixed_ingredients.append(ingredient[::-1])
         else:
